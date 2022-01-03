@@ -4,6 +4,8 @@ import imageCompression from "browser-image-compression";
 
 import Card from "react-bootstrap/Card";
 
+import { ArrowRight } from 'react-bootstrap-icons';
+
 export default class imageCompressor extends React.Component {
   constructor() {
     super();
@@ -90,7 +92,7 @@ export default class imageCompressor extends React.Component {
               />
             </div>
           </div>
-          <div className="col-xl-4 col-lg-4 col-md-12 mb-5 mt-5 col-sm-12 d-flex justify-content-center align-items-baseline">
+          <div className="col-xl-4 col-lg-4 col-md-12 mb-5 mt-5 col-sm-12 d-flex justify-content-center align-items-center">
             <br />
             {this.state.outputFileName ? (
               <button
@@ -103,6 +105,8 @@ export default class imageCompressor extends React.Component {
             ) : (
               <></>
             )}
+            <br />
+            <ArrowRight color="royalblue" size={200} />
           </div>
 
           <div className="col-xl-4 col-lg-4 col-md-12 col-sm-12 mt-3">
